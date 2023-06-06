@@ -1,0 +1,50 @@
+@import '../../../public/mixin.scss';
+@import '../../../public/variable.scss';
+
+.header {
+    height: 120px;
+    padding: 16px 0;
+    @include flex(space-between, center);
+
+    &-left, &-right {
+        @include flex();
+    }
+
+    &-logo {
+        width: 120px;
+        color: $colorLight;
+        text-align-last: justify;
+        font-weight: $fontWeightBold;
+
+        &-name {
+            font-size: $fontSizeBig;
+        }
+
+        &-usName {
+            font-size: $fontSizeMiddle;
+        }
+    }
+
+    &-nav {
+        ul {
+            @include flex();
+            font-size: $fontSizeMiddle;
+
+            .navLink {
+                padding: 0 15px;
+                color: $colorLight;
+                @include center;
+                text-decoration: none
+            }
+        }
+    }
+
+    &-operate {
+        @include flex();
+
+        span {
+            display: block;
+            margin: 0 0 0 15px;
+        }
+    }
+}

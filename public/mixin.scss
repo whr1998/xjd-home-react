@@ -1,0 +1,30 @@
+// flex 容器居中
+@mixin flex($justify: left, $align: flex-start) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+// grid
+@mixin grid($columns, $rows: auto-fill, $gap: 30px) {
+    display: grid;
+    @if $columns > 0 {
+        grid-template-columns: repeat($columns, 1fr);
+    }
+    grid-template-rows: repeat($rows, 1fr);
+    gap: $gap
+}
+
+// 文本不换行
+@mixin no-wrap() {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+// 文字居中
+@mixin center($height:100%){
+    height: $height;
+    line-height: $height;
+    text-align: center
+}

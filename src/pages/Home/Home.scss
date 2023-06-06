@@ -1,0 +1,39 @@
+@import '../../../public/variable.scss';
+@import '../../../public/mixin.scss';
+
+.home {
+    width: 100%;
+    &-banner {
+        @include grid(2, 2, 30px)
+    }
+
+    &-articles {
+        display: grid;
+        grid-template-columns: 62vw 1fr;
+        gap: 30px;
+
+        &-left {
+            &-tab {
+                width: 100%;
+                padding: 10px;
+                background-color: $bgColor;
+                margin: 0 0 36px 0;
+                border-radius: $borderRadiusBig;
+            }
+    
+            &-list {
+                @include grid(3)
+            }
+        }
+
+        &-right {
+            height: 100px;
+
+            &-IDCard {
+                height: 500px;
+                background-color: $bgColor;
+                border-radius: $borderRadiusPlus;
+            }
+        }
+    }
+}

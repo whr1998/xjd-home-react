@@ -1,0 +1,19 @@
+@import '../../../public/variable.scss';
+@import '../../../public/mixin.scss';
+
+.title {
+    height: 50px;
+    line-height: 50px;
+    color: $colorDark;
+    font-weight: $fontWeightPlus;
+    font-size: 30px;
+    font-family: $fontFamily;
+    margin: 32px 0;
+
+    &-line {
+        width: 100%;
+        height: 4px;
+        background: $bgLinearGradient;
+        border-radius: 10px;
+    }
+}

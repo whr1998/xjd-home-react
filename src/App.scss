@@ -1,0 +1,23 @@
+@import '../public/mixin.scss';
+@import '../public/variable.scss';
+
+.app {
+  position: relative;
+  @include flex(center);
+
+  &-banner {
+    width: 100%;
+    height: 600px;
+    background: $bgLinearGradient;
+    opacity: 0.99;
+    position: absolute;
+    z-index: -999;
+    clip-path: $clipPath;
+  }
+
+  &-container {
+    max-width: 1536px;
+    width: 90vw;
+    height: 600px;
+  }
+}
