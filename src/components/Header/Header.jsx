@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import {FaGithub} from 'react-icons/fa'
+import { FaGithub } from "react-icons/fa";
 import "./Header.scss";
 import { NavLink } from "react-router-dom";
 
@@ -8,19 +8,33 @@ export default function Header() {
     {
       id: 1,
       label: "HOME",
-      path: 'home'
+      path: "home",
     },
     {
       id: 2,
       label: "ABOUT",
-      path: 'about'
+      path: "about",
     },
     {
       id: 3,
       label: "CONTACT",
-      path: 'contact'
+      path: "contact",
     },
   ]);
+  const [theme, setTheme] = useState(localStorage.getItem("data-theme") || 'light');
+  const toggleTheme = () => {
+    if(theme === 'light') {
+      setTheme('dark')
+      window.document.documentElement.setAttribute("data-theme", 'dark');
+      localStorage.setItem("data-theme", "dark")
+    }
+    if(theme === 'dark') {
+      setTheme('light')
+      window.document.documentElement.setAttribute("data-theme", 'light');
+      localStorage.setItem("data-theme", "light")
+    }
+  }
+
   return (
     <div className="header">
       <div className="header-left">
@@ -31,17 +45,37 @@ export default function Header() {
         <div className="header-nav">
           <ul>
             {navList.map((item) => {
-              return <NavLink className="navLink" key={item.id} to={'/' + item.path}>{item.label}</NavLink>;
+              return (
+                <NavLink className="navLink" key={item.id} to={"/" + item.path}>
+                  {item.label}
+                </NavLink>
+              );
             })}
           </ul>
         </div>
       </div>
       <div className="header-right">
         <div className="header-operate">
-          <span><FaGithub className="icon"/></span>
-          <span><FaGithub className="icon"/></span>
-          <span><FaGithub className="icon"/></span>
-          <span><FaGithub className="icon"/></span>
+          <span>
+            <FaGithub className="icon" />
+          </span>
+          <span>
+            <FaGithub className="icon" />
+          </span>
+          <span>
+            <FaGithub className="icon" />
+          </span>
+          <span>
+            <FaGithub className="icon" />
+          </span>
+          <div className="header-operate-toggle">
+            <div
+              onClick={toggleTheme}
+              className={theme === 'dark' ? "slide bgDark" : "slide bgLight"}
+            >
+              <div className={theme === 'dark' ? "sliderDark" : "sliderLight"}></div>
+            </div>
+          </div>
         </div>
       </div>
     </div>

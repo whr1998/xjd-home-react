@@ -78,14 +78,15 @@ select {
     }
 }
 
-@import '../public/variable.scss';
+@import '../public/variable';
+@import '../public/handleThemes';
 html {
     font-family: $fontFamily;
     font-size: medium;
     font-weight: $fontWeightBold;
 }
 body {
-    background-color: $appBgColor;
+    @include background_color("background-primary");
 }
 .icon {
     font-size: $fontSizePlus;

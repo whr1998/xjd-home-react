@@ -1,5 +1,6 @@
-@import '../../../public/variable.scss';
-@import '../../../public/mixin.scss';
+@import '../../../public/variable';
+@import '../../../public/mixin';
+@import '../../../public/handleThemes';
 
 .home {
     width: 100%;
@@ -9,14 +10,15 @@
 
     &-articles {
         display: grid;
-        grid-template-columns: 62vw 1fr;
+        grid-template-columns: 1fr 320px;
         gap: 30px;
 
         &-left {
             &-tab {
                 width: 100%;
                 padding: 10px;
-                background-color: $bgColor;
+                @include font_color("font-secondary");
+                @include background_color("background-secondary");
                 margin: 0 0 36px 0;
                 border-radius: $borderRadiusBig;
             }
@@ -31,8 +33,30 @@
 
             &-IDCard {
                 height: 500px;
-                background-color: $bgColor;
+                background: $bgLinearGradient;
                 border-radius: $borderRadiusPlus;
+                padding: 60px 10px 10px 10px;
+                position: relative;
+                margin: 0 auto;
+
+                &-mask {
+                    width: calc(100% - 20px);
+                    height: calc(100% - 70px);
+                    background-color: #fff;
+                    border-radius: $borderRadiusBig;
+                    position: absolute;
+                }
+
+                &-avatar {
+                    border-radius: 50%;
+                    width: 120px;
+                    height: 120px;
+                    background-color: #fff;
+                    top: 15px;
+                    left: 100px;
+                    position: absolute;
+                    z-index: 2;
+                }
             }
         }
     }

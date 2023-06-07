@@ -139,7 +139,10 @@ export default function Home() {
           </div>
         </div>
         <div className="home-articles-right">
-          <div className="home-articles-right-IDCard"></div>
+          <div className="home-articles-right-IDCard">
+            <div className="home-articles-right-IDCard-mask"></div>
+            <div className="home-articles-right-IDCard-avatar"></div>
+          </div>
         </div>
       </div>
     </div>

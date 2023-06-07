@@ -1,14 +1,16 @@
-@import '../../../public/variable.scss';
-@import '../../../public/mixin.scss';
+@import '../../../public/variable';
+@import '../../../public/mixin';
+@import '../../../public/handleThemes';
 
 .title {
     height: 50px;
     line-height: 50px;
-    color: $colorDark;
+    @include font_color("font-primary");
     font-weight: $fontWeightPlus;
     font-size: 30px;
     font-family: $fontFamily;
     margin: 32px 0;
+    @include background_color("background-primary");
 
     &-line {
         width: 100%;

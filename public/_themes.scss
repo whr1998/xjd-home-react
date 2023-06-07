@@ -1,0 +1,26 @@
+$themes: (
+    light: (
+        // 字体
+        font-primary: #1a1a1a,
+        font-secondary: #212121,
+
+        // 背景颜色
+        background-primary: #f1f3f9,
+        background-secondary: #fff,
+
+        // 边框
+        border1: #fff,
+    ),
+
+    dark: (
+        // 字体
+        font-primary: #f1f3f9,
+        font-secondary: #fff,
+
+        // 背景颜色
+        background-primary: #1a1a1a,
+        background-secondary: #212121,
+
+        // 边框
+        border1: #212121,
+    ))
