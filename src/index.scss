@@ -78,8 +78,8 @@ select {
     }
 }
 
-@import '../public/variable';
-@import '../public/handleThemes';
+@import './styles/variable';
+@import './styles/handleThemes';
 html {
     font-family: $fontFamily;
     font-size: medium;
