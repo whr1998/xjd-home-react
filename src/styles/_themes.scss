@@ -7,9 +7,13 @@ $themes: (
         // 背景颜色
         background-primary: #f1f3f9,
         background-secondary: #fff,
+        background-secondary-rgba: rgba(255, 255, 255, 0.8),
 
         // 边框
         border1: #fff,
+
+        // 头像边框
+        avatar-border: 8px solid rgba(255, 255, 255, 0.6),
     ),
 
     dark: (
@@ -20,7 +24,11 @@ $themes: (
         // 背景颜色
         background-primary: #1a1a1a,
         background-secondary: #212121,
+        background-secondary-rgba: rgba(33, 33, 33, 0.8),
 
         // 边框
         border1: #212121,
+
+        // 头像边框
+        avatar-border: 8px solid rgba(33, 33, 33, 0.6),
     ))

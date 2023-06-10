@@ -3,6 +3,7 @@ import ArticleBox from "../../components/ArticleBox/ArticleBox";
 import "./Home.scss";
 import banner from "../../assets/banner.jpg";
 import Title from "../../components/Title/Title";
+import avatar from '../../assets/avatar.webp'
 
 export default function Home() {
   const [list] = useState([
@@ -140,8 +141,17 @@ export default function Home() {
         </div>
         <div className="home-articles-right">
           <div className="home-articles-right-IDCard">
-            <div className="home-articles-right-IDCard-mask"></div>
-            <div className="home-articles-right-IDCard-avatar"></div>
+            <div className="home-articles-right-IDCard-mask">
+              <div className="home-articles-right-IDCard-avatar">
+                <img src={avatar} alt="" />
+              </div>
+              <div className="home-articles-right-IDCard-name">
+                <Title align="center" title="小激动"/>
+              </div>
+              <div className="home-articles-right-IDCard-slogan">
+                这是一段不知道在说什么的文字
+              </div>
+            </div>
           </div>
         </div>
       </div>

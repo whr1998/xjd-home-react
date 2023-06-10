@@ -8,8 +8,6 @@
     font-weight: $fontWeightPlus;
     font-size: 30px;
     font-family: $fontFamily;
-    margin: 32px 0;
-    @include background_color("background-primary");
 
     &-line {
         width: 100%;

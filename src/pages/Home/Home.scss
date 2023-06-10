@@ -5,19 +5,21 @@
 .home {
     width: 100%;
     &-banner {
-        @include grid(2, 2, 30px)
+        @include grid(2, 2, 30px);
+        margin-bottom: 64px;
     }
 
     &-articles {
         display: grid;
         grid-template-columns: 1fr 320px;
         gap: 30px;
+        margin-top: 32px;
+        @include font_color("font-secondary");
 
         &-left {
             &-tab {
                 width: 100%;
                 padding: 10px;
-                @include font_color("font-secondary");
                 @include background_color("background-secondary");
                 margin: 0 0 36px 0;
                 border-radius: $borderRadiusBig;
@@ -30,32 +32,41 @@
 
         &-right {
             height: 100px;
-
             &-IDCard {
                 height: 500px;
                 background: $bgLinearGradient;
                 border-radius: $borderRadiusPlus;
-                padding: 60px 10px 10px 10px;
+                padding: 60px 5px 5px 5px;
                 position: relative;
                 margin: 0 auto;
 
                 &-mask {
-                    width: calc(100% - 20px);
-                    height: calc(100% - 70px);
-                    background-color: #fff;
-                    border-radius: $borderRadiusBig;
+                    width: calc(100% - 10px);
+                    height: calc(100% - 65px);
+                    border-radius: $borderRadiusPlus;
+                    @include background_color_rgba("background-secondary-rgba");
                     position: absolute;
+                    display: grid; 
+                    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+                    justify-items: center;
                 }
 
                 &-avatar {
                     border-radius: 50%;
                     width: 120px;
                     height: 120px;
-                    background-color: #fff;
-                    top: 15px;
-                    left: 100px;
-                    position: absolute;
-                    z-index: 2;
+                    margin-top: -50px;
+                    img {
+                        border-radius: 50%;
+                        width: 120px;
+                        height: 120px;
+                        @include avatar_border("avatar-border");
+                    }
+                }
+
+                &-name {
+                    width: 100px;
+                    font-weight: $fontWeightPlus;
                 }
             }
         }
