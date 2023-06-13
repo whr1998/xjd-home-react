@@ -4,6 +4,7 @@ import "./Home.scss";
 import banner from "../../assets/banner.jpg";
 import Title from "../../components/Title/Title";
 import avatar from '../../assets/avatar.webp'
+import Footer from "../../components/Footer/Footer";
 
 export default function Home() {
   const [list] = useState([

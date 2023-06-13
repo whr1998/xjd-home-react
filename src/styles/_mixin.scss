@@ -6,7 +6,7 @@
 }
 
 // grid
-@mixin grid($columns, $rows: auto-fill, $gap: 30px) {
+@mixin grid($columns: auto-fill, $rows: auto-fill, $gap: 16px) {
     display: grid;
     @if $columns > 0 {
         grid-template-columns: repeat($columns, 1fr);
