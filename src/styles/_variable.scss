@@ -15,6 +15,23 @@ $bgLinearGradient: linear-gradient(
 );
 // body背景颜色
 $appBgColor: #f1f3f9;
+
+// 字体大小
+$fontSizePlus: 36px;
+$fontSizeBig: 24px;
+$fontSizeMiddle: 16px;
+
+// 字重
+$fontWeightPlus: 900;
+$fontWeightBold: bold;
+
+$fontFamily: 华文细黑;
+
+// border
+$borderRadiusPlus: 32px;
+$borderRadiusBig: 16px;
+$borderRadiusMini: 8px;
+
 // 块背景切割
 $clipPath: polygon(
   100% 0,
@@ -121,19 +138,4 @@ $clipPath: polygon(
   99% 64.75%,
   100% 65.7%
 );
-// 字体大小
-$fontSizePlus: 36px;
-$fontSizeBig: 24px;
-$fontSizeMiddle: 16px;
-
-// 字重
-$fontWeightPlus: 900;
-$fontWeightBold: bold;
-
-$fontFamily: 华文细黑;
-
-// border
-$borderRadiusPlus: 30px;
-$borderRadiusBig: 20px;
-$borderRadiusMini: 5px;
 

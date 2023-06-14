@@ -14,6 +14,9 @@ $themes: (
 
         // 头像边框
         avatar-border: 8px solid rgba(255, 255, 255, 0.6),
+        
+        // 渐变
+        linear-gradient: linear-gradient(transparent, #fff),
     ),
 
     dark: (
@@ -31,4 +34,7 @@ $themes: (
 
         // 头像边框
         avatar-border: 8px solid rgba(33, 33, 33, 0.6),
+
+        // 渐变
+        linear-gradient: linear-gradient(transparent, #212121),
     ))

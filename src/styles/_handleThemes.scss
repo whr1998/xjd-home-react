@@ -52,3 +52,10 @@
         border: themed($color)!important;
     }
 }
+
+//获取渐变颜色
+@mixin linear_gradient($color) {
+    @include themeify {
+        background: themed($color)!important;
+    }
+}

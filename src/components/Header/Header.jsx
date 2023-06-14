@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { FaGithub } from "react-icons/fa";
 import "./Header.scss";
 import { NavLink } from "react-router-dom";
 
@@ -36,8 +35,8 @@ export default function Header() {
   }
 
   return (
-    <div className="header">
-      <div className="header-left">
+    <header className="header">
+      <nav className="header-left">
         <div className="header-logo">
           <p className="header-logo-name">小激动</p>
           <p className="header-logo-usName">XIAO JI DONG</p>
@@ -53,21 +52,9 @@ export default function Header() {
             })}
           </ul>
         </div>
-      </div>
-      <div className="header-right">
+      </nav>
+      <nav className="header-right">
         <div className="header-operate">
-          <span>
-            <FaGithub className="icon" />
-          </span>
-          <span>
-            <FaGithub className="icon" />
-          </span>
-          <span>
-            <FaGithub className="icon" />
-          </span>
-          <span>
-            <FaGithub className="icon" />
-          </span>
           <div className="header-operate-toggle">
             <div
               onClick={toggleTheme}
@@ -77,7 +64,7 @@ export default function Header() {
             </div>
           </div>
         </div>
-      </div>
-    </div>
+      </nav>
+    </header>
   );
 }

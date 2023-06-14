@@ -1,10 +1,8 @@
 import React, { useState } from "react";
 import ArticleBox from "../../components/ArticleBox/ArticleBox";
 import "./Home.scss";
-import banner from "../../assets/banner.jpg";
 import Title from "../../components/Title/Title";
 import avatar from '../../assets/avatar.webp'
-import Footer from "../../components/Footer/Footer";
 
 export default function Home() {
   const [list] = useState([
@@ -13,7 +11,7 @@ export default function Home() {
       title: "11111",
       content: "这是第一篇文章",
       time: "2022/06/23",
-      banner: banner,
+      banner: 'http://aurora-xu.oss-cn-hangzhou.aliyuncs.com/aurora/articles/2c6ff6f793352540e6c4e09e9530d391.png',
       tag: "tag",
     },
     {
@@ -21,7 +19,7 @@ export default function Home() {
       title: "22222",
       content: "这是第二篇文章",
       time: "2022/06/23",
-      banner: banner,
+      banner: 'http://aurora-xu.oss-cn-hangzhou.aliyuncs.com/aurora/articles/2c6ff6f793352540e6c4e09e9530d391.png',
       tag: "tag",
     },
     {
@@ -29,7 +27,7 @@ export default function Home() {
       title: "33333",
       content: "这是第三篇文章",
       time: "2022/06/23",
-      banner: banner,
+      banner: 'http://aurora-xu.oss-cn-hangzhou.aliyuncs.com/aurora/articles/2c6ff6f793352540e6c4e09e9530d391.png',
       tag: "tag",
     },
     {
@@ -37,7 +35,7 @@ export default function Home() {
       title: "44444",
       content: "这是第四篇文章",
       time: "2022/06/23",
-      banner: banner,
+      banner: 'http://aurora-xu.oss-cn-hangzhou.aliyuncs.com/aurora/articles/2c6ff6f793352540e6c4e09e9530d391.png',
       tag: "tag",
     },
   ]);
@@ -47,7 +45,7 @@ export default function Home() {
       title: "11111",
       content: "这是第一篇文章",
       time: "2022/06/23",
-      banner: banner,
+      banner: 'http://aurora-xu.oss-cn-hangzhou.aliyuncs.com/aurora/articles/2c6ff6f793352540e6c4e09e9530d391.png',
       tag: "tag",
     },
     {
@@ -55,7 +53,7 @@ export default function Home() {
       title: "22222",
       content: "这是第二篇文章",
       time: "2022/06/23",
-      banner: banner,
+      banner: 'http://aurora-xu.oss-cn-hangzhou.aliyuncs.com/aurora/articles/2c6ff6f793352540e6c4e09e9530d391.png',
       tag: "tag",
     },
     {
@@ -63,7 +61,7 @@ export default function Home() {
       title: "33333",
       content: "这是第三篇文章",
       time: "2022/06/23",
-      banner: banner,
+      banner: 'http://aurora-xu.oss-cn-hangzhou.aliyuncs.com/aurora/articles/2c6ff6f793352540e6c4e09e9530d391.png',
       tag: "tag",
     },
     {
@@ -71,7 +69,7 @@ export default function Home() {
       title: "44444",
       content: "这是第四篇文章",
       time: "2022/06/23",
-      banner: banner,
+      banner: 'http://aurora-xu.oss-cn-hangzhou.aliyuncs.com/aurora/articles/2c6ff6f793352540e6c4e09e9530d391.png',
       tag: "tag",
     },
     {
@@ -79,7 +77,7 @@ export default function Home() {
       title: "44444",
       content: "这是第四篇文章",
       time: "2022/06/23",
-      banner: banner,
+      banner: 'http://aurora-xu.oss-cn-hangzhou.aliyuncs.com/aurora/articles/2c6ff6f793352540e6c4e09e9530d391.png',
       tag: "tag",
     },
     {
@@ -87,7 +85,7 @@ export default function Home() {
       title: "44444",
       content: "这是第四篇文章",
       time: "2022/06/23",
-      banner: banner,
+      banner: 'http://aurora-xu.oss-cn-hangzhou.aliyuncs.com/aurora/articles/2c6ff6f793352540e6c4e09e9530d391.png',
       tag: "tag",
     },
     {
@@ -95,7 +93,7 @@ export default function Home() {
       title: "44444",
       content: "这是第四篇文章",
       time: "2022/06/23",
-      banner: banner,
+      banner: 'http://aurora-xu.oss-cn-hangzhou.aliyuncs.com/aurora/articles/2c6ff6f793352540e6c4e09e9530d391.png',
       tag: "tag",
     },
     {
@@ -103,7 +101,7 @@ export default function Home() {
       title: "44444",
       content: "这是第四篇文章",
       time: "2022/06/23",
-      banner: banner,
+      banner: 'http://aurora-xu.oss-cn-hangzhou.aliyuncs.com/aurora/articles/2c6ff6f793352540e6c4e09e9530d391.png',
       tag: "tag",
     },
     {
@@ -111,7 +109,7 @@ export default function Home() {
       title: "44444",
       content: "这是第四篇文章",
       time: "2022/06/23",
-      banner: banner,
+      banner: 'http://aurora-xu.oss-cn-hangzhou.aliyuncs.com/aurora/articles/2c6ff6f793352540e6c4e09e9530d391.png',
       tag: "tag",
     },
     {
@@ -119,7 +117,7 @@ export default function Home() {
       title: "44444",
       content: "这是第四篇文章",
       time: "2022/06/23",
-      banner: banner,
+      banner: 'http://aurora-xu.oss-cn-hangzhou.aliyuncs.com/aurora/articles/2c6ff6f793352540e6c4e09e9530d391.png',
       tag: "tag",
     },
   ]);
