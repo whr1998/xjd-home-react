@@ -131,23 +131,29 @@ export default function Home() {
       <Title title="ARTICLES" />
       <div className="home-articles">
         <div className="home-articles-left">
-          <div className="home-articles-left-tab">s</div>
-          <div className="home-articles-left-list">
+          <div className="tab">
+            <ul>
+              <li>
+                <span className=""></span>
+              </li>
+            </ul>
+          </div>
+          <div className="list">
             {list2.map((item) => {
               return <ArticleBox key={item.id} item={item} height="500px" />;
             })}
           </div>
         </div>
         <div className="home-articles-right">
-          <div className="home-articles-right-IDCard">
-            <div className="home-articles-right-IDCard-mask">
-              <div className="home-articles-right-IDCard-avatar">
+          <div className="IDCard">
+            <div className="mask">
+              <div className="avatar">
                 <img src={avatar} alt="" />
               </div>
-              <div className="home-articles-right-IDCard-name">
+              <div className="name">
                 <Title align="center" title="小激动"/>
               </div>
-              <div className="home-articles-right-IDCard-slogan">
+              <div className="slogan">
                 这是一段不知道在说什么的文字
               </div>
             </div>
