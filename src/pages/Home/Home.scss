@@ -25,10 +25,42 @@
         &-left {
             .tab {
                 width: 100%;
-                padding: 10px;
                 @include background_color("background-secondary");
                 margin: 0 0 36px 0;
+                padding: 4px 28px;
                 border-radius: $borderRadiusBig;
+                ul {
+                    margin: 0;
+                    padding: 0;
+                    display: flex;
+                    justify-content: flex-start;
+                    flex-wrap: wrap;
+                    .active {
+                        width: 80px;
+                        text-align: center;
+                        font-weight: $fontWeightBold;
+                        background: $bgLinearGradient;
+                        span {
+                            color: #fff;
+                        }
+                    }
+                    li {
+                        display: inline-block;
+                        @include background_color("background-primary");
+                        @include font_color("font-primary");
+                        font-size: 14px;
+                        border-radius: $borderRadiusMini;
+                        padding: 8px 12px;
+                        margin: 8px 16px 8px 0;
+                        cursor: pointer;
+                        span {
+                            margin: 5px
+                        }
+                    }
+                    li:hover {
+                        opacity: 0.6;
+                    }
+                }
             }
 
             .list {

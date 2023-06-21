@@ -2,19 +2,19 @@ const path = require("path");
 const cracoPluginStyleResourcesLoader = require("craco-plugin-stylus-resources-loader");
 
 module.exports = {
-  devServer: {
-    port: 3000,
-    // 跨域配置
-    proxy: {
-      "/api": {
-        // 请求转发给谁
-        target: "http://localhost:8080",
-        changeOrigin: true, // 是否对告诉真实服务器真实的源，false不改变源(真实的源) true(改变源)
-        pathRewrite: { "^/api": "" }, // 重写请求路径(必须)
-        ws: true, // 用于支持websocket
-      },
-    },
-  },
+  // devServer: {
+  //   port: 3000,
+  //   // 跨域配置
+  //   proxy: {
+  //     "/api": {
+  //       // 请求转发给谁
+  //       target: "http://localhost:8080",
+  //       changeOrigin: true, // 是否对告诉真实服务器真实的源，false不改变源(真实的源) true(改变源)
+  //       pathRewrite: { "^/api": "" }, // 重写请求路径(必须)
+  //       ws: true, // 用于支持websocket
+  //     },
+  //   },
+  // },
   
   // webpack 配置
   webpack: {

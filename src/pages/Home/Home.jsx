@@ -121,6 +121,60 @@ export default function Home() {
       tag: "tag",
     },
   ]);
+  const [tab] = useState([
+    {
+      name: "测试",
+      num: 1,
+    },
+    {
+      name: "学习",
+      num: 1,
+    },
+    {
+      name: "前端",
+      num: 1,
+    },
+    {
+      name: "后端",
+      num: 1,
+    },
+    {
+      name: "大数据",
+      num: 1,
+    },
+    {
+      name: "哈哈哈",
+      num: 1,
+    },
+    {
+      name: "呵呵呵",
+      num: 1,
+    },
+    {
+      name: "嘿嘿嘿",
+      num: 1,
+    },
+    {
+      name: "嘻嘻嘻",
+      num: 1,
+    },
+    {
+      name: "嘿嘿嘿",
+      num: 1,
+    },
+    {
+      name: "嘻嘻嘻",
+      num: 1,
+    },
+    {
+      name: "嘿嘿嘿",
+      num: 1,
+    },
+    {
+      name: "嘻嘻嘻",
+      num: 1,
+    },
+  ]);
   return (
     <div className="home">
       <div className="home-banner">
@@ -131,11 +185,19 @@ export default function Home() {
       <Title title="ARTICLES" />
       <div className="home-articles">
         <div className="home-articles-left">
-          <div className="tab">
+        <div className="tab">
             <ul>
-              <li>
-                <span className=""></span>
+              <li className="active">
+                <span>ALL</span>
               </li>
+              {tab.map((item) => {
+                return (
+                  <li>
+                    <span>{item.name}</span>
+                    <span>{item.num}</span>
+                  </li>
+                );
+              })}
             </ul>
           </div>
           <div className="list">
