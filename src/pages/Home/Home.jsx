@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import ArticleBox from "@components/ArticleBox/ArticleBox";
 import "./Home.scss";
 import Title from "@components/Title/Title";
+import Card from "../../components/Card/Card";
 import avatar from "@assets/avatar.webp";
 
 export default function Home() {
@@ -137,57 +138,92 @@ export default function Home() {
   ]);
   const [tab] = useState([
     {
+      id: 1,
       name: "测试",
       num: 1,
     },
     {
+      id: 2,
       name: "学习",
       num: 1,
     },
     {
+      id: 3,
       name: "前端",
       num: 1,
     },
     {
+      id: 4,
       name: "后端",
       num: 1,
     },
     {
+      id: 5,
       name: "大数据",
       num: 1,
     },
     {
+      id: 6,
       name: "哈哈哈",
       num: 1,
     },
     {
+      id: 7,
       name: "呵呵呵",
       num: 1,
     },
     {
+      id: 8,
       name: "嘿嘿嘿",
       num: 1,
     },
     {
+      id: 9,
       name: "嘻嘻嘻",
       num: 1,
     },
     {
+      id: 10,
       name: "嘿嘿嘿",
       num: 1,
     },
     {
+      id: 11,
       name: "嘻嘻嘻",
       num: 1,
     },
     {
+      id: 12,
       name: "嘿嘿嘿",
       num: 1,
     },
     {
+      id: 13,
       name: "嘻嘻嘻",
       num: 1,
     },
+  ]);
+  const [cardList] = useState([
+    {
+      id: 1,
+      title: 'RECENT COMMENTS',
+      icon: ''
+    },
+    {
+      id: 2,
+      title: 'TAGS',
+      icon: ''
+    },
+    {
+      id: 3,
+      title: 'NOTICE',
+      icon: ''
+    },
+    {
+      id: 4,
+      title: 'WEBSITE INFO',
+      icon: ''
+    }
   ]);
   return (
     <div className="home">
@@ -206,7 +242,7 @@ export default function Home() {
               </li>
               {tab.map((item) => {
                 return (
-                  <li>
+                  <li key={item.id}>
                     <span>{item.name}</span>
                     <span>{item.num}</span>
                   </li>
@@ -232,6 +268,11 @@ export default function Home() {
               <div className="slogan">这是一段不知道在说什么的文字</div>
             </div>
           </div>
+          {
+            cardList.map((item) => {
+              return <Card key={item.id} {...item} />
+            })
+          }
         </div>
       </div>
     </div>

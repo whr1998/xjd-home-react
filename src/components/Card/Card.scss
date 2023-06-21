@@ -1,0 +1,7 @@
+.card {
+    @include background_color("background-secondary");
+    border-radius: $borderRadiusBig;
+    width: 100%;
+    padding: 2em;
+    margin-top: 2em;
+}
