@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import ArticleBox from "@/components/ArticleBox/ArticleBox";
+import ArticleBox from "@components/ArticleBox/ArticleBox";
 import "./Home.scss";
-import Title from "@/components/Title/Title";
-import avatar from '@/assets/avatar.webp'
+import Title from "@components/Title/Title";
+import avatar from '@assets/avatar.webp'
 
 export default function Home() {
   const [list] = useState([

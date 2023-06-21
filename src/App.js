@@ -1,8 +1,8 @@
 import { Suspense, useEffect } from "react";
 import "./App.scss";
-import Header from "./components/Header/Header";
-import RoutesConfig from "./routes";
-import Footer from "./components/Footer/Footer";
+import Header from "@components/Header/Header";
+import RoutesConfig from "@routes";
+import Footer from "@components/Footer/Footer";
 
 function App() {
 
